@@ -85,15 +85,11 @@ function UserLogin(props) {
               <span className={styles.tipsText} style={{ marginRight: '20px' }}>
                 管理员登录：admin/admin
               </span>
-              <span className={styles.tipsText}>用户登录：user/user</span>
+              
             </p>
           </Row>
 
-          <Row className="tips">
-            <Link to="/user/register" className={styles.tipsText}>
-              立即注册
-            </Link>
-          </Row>
+          
         </Form>
       </div>
     </div>

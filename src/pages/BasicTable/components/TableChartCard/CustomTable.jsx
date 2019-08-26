@@ -6,7 +6,7 @@ const getData = () => {
   return Array.from({ length: 10 }).map((item, index) => {
     return {
       rank: `${index + 1}`,
-      developer: '淘小宝',
+      developer: '管理员',
       cost: `123${index}`,
       score: `8${index}.${index}`,
     };

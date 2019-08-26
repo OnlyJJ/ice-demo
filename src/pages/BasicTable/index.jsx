@@ -11,7 +11,7 @@ function BasicTable() {
     </div>
   );
 }
-
+// 权限控制
 export default withAuth({
-  authorities: ['admin'],
+  authorities: ['admin', 'user', ''],
 })(BasicTable);

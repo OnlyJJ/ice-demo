@@ -15,7 +15,7 @@ const random = (min, max) => {
 const getData = (length = 10) => {
   return Array.from({ length }).map(() => {
     return {
-      name: ['淘小宝', '淘二宝'][random(0, 1)],
+      name: ['管理员', '淘二宝'][random(0, 1)],
       level: ['普通会员', '白银会员', '黄金会员', 'VIP 会员'][random(0, 3)],
       balance: random(10000, 100000),
       accumulative: random(50000, 100000),
