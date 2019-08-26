@@ -3,14 +3,17 @@ import React from 'react';
 import UserLayout from '@/layouts/UserLayout';
 import BasicLayout from '@/layouts/BasicLayout';
 
-const UserLogin = React.lazy(() => import('@/pages/UserLogin'));
-const Login = React.lazy(() => import('@/pages/Login'));
+const MyUserLoing = React.lazy(() => import('@/pages/MyUserLoing'));
+const Home = React.lazy(() => import('@/pages/Home'));
+
+const Yaoping = React.lazy(() => import('@/pages/Yaoping'));
+
 const UserRegister = React.lazy(() => import('@/pages/UserRegister'));
 const Dashboard = React.lazy(() => import('@/pages/Dashboard'));
 const Charts = React.lazy(() => import('@/pages/Charts'));
 const BasicCharts = React.lazy(() => import('@/pages/BasicCharts'));
 const Terms = React.lazy(() => import('@/pages/Terms'));
-const Result = React.lazy(() => import('@/pages/Result'));
+
 const BasicList = React.lazy(() => import('@/pages/BasicList'));
 const ProjectList = React.lazy(() => import('@/pages/ProjectList'));
 const BasicTable = React.lazy(() => import('@/pages/BasicTable'));
@@ -28,7 +31,7 @@ const routerConfig = [
     path: '/user',
     component: UserLayout,
     children: [
-      { path: '/login', component: UserLogin },
+      { path: '/login', component: MyUserLoing },
       { path: '/register', component: UserRegister },
       { path: '/', redirect: '/user/login' },
       { component: NotFound },
@@ -43,7 +46,6 @@ const routerConfig = [
       { path: '/chart/basic', component: BasicCharts },
       { path: '/list/basic', component: BasicList },
       { path: '/list/general', component: ProjectList },
-      { path: '/result/success', component: Result },
       { path: '/result/fail', component: Fail },
       { path: '/table/basic', component: BasicTable },
       { path: '/profile/basic', component: Profile },
@@ -54,8 +56,10 @@ const routerConfig = [
       { path: '/exception/403', component: Forbidden },
       { path: '/exception/204', component: Empty },
       { path: '/exception/404', component: NotFound },
-      { path: '/user/login', component: Login },
-      { path: '/', redirect: '/dashboard/monitor' },
+      { path: '/user/login', component: MyUserLoing },
+      { path: '/yp/cost', component: Yaoping },
+      { path: '/home', component: Home },
+      { path: '/', redirect: '/home' },
       { component: NotFound },
     ],
   },
