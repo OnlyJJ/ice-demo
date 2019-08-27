@@ -5,16 +5,17 @@ import EditableTable from './components/EditableTable';
 import LatestActivity from './components/LatestActivity';
 import ProjectAnalysis from './components/ProjectAnalysis';
 import PieDoughnutChart from './components/PieDoughnutChart';
+import Mydecision from './components/Mydecision';
+
 
 export default function Dashboard() {
   return (
     <div className="dashboard-page">
-      <Overivew />
+      <Mydecision />
+     
       <TabChart />
-      <LatestActivity />
-      <ProjectAnalysis />
-      <EditableTable />
-      <PieDoughnutChart />
+     
+      
     </div>
   );
 }

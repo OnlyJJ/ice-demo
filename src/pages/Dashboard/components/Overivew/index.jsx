@@ -61,7 +61,7 @@ export default function Overivew() {
       <Row wrap>
         <Col xxs="24" s="12" l="6" className={styles.item}>
           <div className={styles.title}>
-            <FormattedMessage id="app.dashboard.overview.day.sales" />
+            xxx
             {extraIcon}
           </div>
           <div className={styles.count}>￥ 146,657</div>

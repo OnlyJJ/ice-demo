@@ -19,15 +19,10 @@ function TabChart(props) {
     <div className={styles.container}>
       <IceContainer className={styles.card}>
         <Tab onChange={handleChange}>
+         
           <Tab.Item
             key="1"
-            title={formatMessage({ id: 'app.dashboard.trend.income' })}
-          >
-            <SeriesLine />
-          </Tab.Item>
-          <Tab.Item
-            key="2"
-            title={formatMessage({ id: 'app.dashboard.trend.trans' })}
+            title={"年度收入走势：亿元"}
           >
             <BasicLine />
           </Tab.Item>

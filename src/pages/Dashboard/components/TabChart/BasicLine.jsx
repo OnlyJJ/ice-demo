@@ -5,15 +5,15 @@ export default function BasicLine() {
   // 参考：https://alibaba.github.io/BizCharts/
   // 数据源
   const data = [
-    { year: '2011', value: 30 },
-    { year: '2012', value: 40 },
-    { year: '2013', value: 35 },
-    { year: '2014', value: 50 },
-    { year: '2015', value: 49 },
-    { year: '2016', value: 60 },
-    { year: '2017', value: 70 },
-    { year: '2018', value: 90 },
-    { year: '2019', value: 100 },
+    { year: '2011', value: 8.8 },
+    { year: '2012', value: 9.2 },
+    { year: '2013', value: 10.1 },
+    { year: '2014', value: 11.2 },
+    { year: '2015', value: 10.8 },
+    { year: '2016', value: 12.5 },
+    { year: '2017', value: 13.2 },
+    { year: '2018', value: 15.4 },
+    { year: '2019', value: 17.3 },
   ];
 
   const cols = {

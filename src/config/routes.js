@@ -4,6 +4,8 @@ import UserLayout from '@/layouts/UserLayout';
 import BasicLayout from '@/layouts/BasicLayout';
 
 const MyUserLoing = React.lazy(() => import('@/pages/MyUserLoing'));
+const Finance = React.lazy(() => import('@/pages/Finance'));
+const Decision = React.lazy(() => import('@/pages/Decision'));
 const Home = React.lazy(() => import('@/pages/Home'));
 
 const Yaoping = React.lazy(() => import('@/pages/Yaoping'));
@@ -41,8 +43,8 @@ const routerConfig = [
     path: '/',
     component: BasicLayout,
     children: [
-      { path: '/profile/general', component: Terms },
-      { path: '/dashboard/monitor', component: Dashboard },
+      { path: '/exception/500', component: ServerError },
+      { path: '/account/setting', component: Setting },
       { path: '/chart/basic', component: BasicCharts },
       { path: '/list/basic', component: BasicList },
       { path: '/list/general', component: ProjectList },
@@ -51,14 +53,16 @@ const routerConfig = [
       { path: '/profile/basic', component: Profile },
       { path: '/chart/general', component: Charts },
       { path: '/table/general', component: GeneralTable },
-      { path: '/account/setting', component: Setting },
-      { path: '/exception/500', component: ServerError },
+      { path: '/dashboard/monitor', component: Dashboard },
+      { path: '/profile/general', component: Terms },
       { path: '/exception/403', component: Forbidden },
       { path: '/exception/204', component: Empty },
       { path: '/exception/404', component: NotFound },
       { path: '/user/login', component: MyUserLoing },
       { path: '/yp/cost', component: Yaoping },
       { path: '/home', component: Home },
+      { path: '/decision/basic', component: Decision },
+      { path: '/dashboard/cost', component: Finance },
       { path: '/', redirect: '/home' },
       { component: NotFound },
     ],

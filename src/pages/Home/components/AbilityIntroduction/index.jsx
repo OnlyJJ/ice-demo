@@ -4,44 +4,45 @@ import styles from './index.module.scss';
 
 const { Row, Col } = Grid;
 
-const frameworkIcon = require('./images/yongyao.png');
+const frameworkIcon = require('./images/framework_icon.png');
 const componentIcon = require('./images/component_icon.png');
 const apiIcon = require('./images/api_icon.png');
 
 const abilities = [
   {
     icon: frameworkIcon,
-    title: '医疗质量分析',
+    title: '医疗质量',
     content: '',
     link: '/#/chart/basic',
   },
   {
     icon: componentIcon,
-    title: '门急诊分析',
+    title: '门急诊',
     content: '',
     link: '/components/',
   },
   {
     icon: apiIcon,
-    title: '住院分析',
+    title: '住院护理',
+    content: '',
+    link: '/api/',
+  },
+  
+  {
+    icon: componentIcon,
+    title: '药品药库',
+    content: '',
+    link: '/components/',
+  },
+  {
+    icon: apiIcon,
+    title: '设备仪器',
     content: '',
     link: '/api/',
   },
   {
-    icon: frameworkIcon,
-    title: '护理分析',
-    content: '',
-    link: '/framework/',
-  },
-  {
-    icon: componentIcon,
-    title: '药品分析',
-    content: '',
-    link: '/components/',
-  },
-  {
     icon: apiIcon,
-    title: '设备分析',
+    title: '医技科研',
     content: '',
     link: '/api/',
   },
