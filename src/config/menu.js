@@ -19,7 +19,7 @@ const asideMenuConfig = [
   {
     name: '财务报表',
     path: '/dashboard',
-    icon: 'cascades',
+    icon: 'home',
     children: [
       { name: 'monitor', path: '/dashboard/monitor', id: 'Menu_1oy6s' },
       { name: 'dashboard', path: '/dashboard/cost', id: 'Menu_18yg2' },
@@ -73,7 +73,7 @@ const asideMenuConfig = [
   {
     name: '人才绩效',
     path: '/list',
-    icon: 'menu',
+    icon: 'coupons',
     children: [
       { name: 'basic', path: '/list/basic', id: 'Menu_jd1s5' },
       { name: 'general', path: '/list/general', id: 'Menu_h5o7p' },
@@ -83,7 +83,7 @@ const asideMenuConfig = [
   {
     name: '医技科研',
     path: '/technology',
-    icon: 'menu',
+    icon: 'publish',
     children: [
       { name: 'basic', path: '/list/basic', id: 'Menu_jd1s5' },
       { name: 'general', path: '/list/general', id: 'Menu_h5o7p' },
@@ -93,20 +93,14 @@ const asideMenuConfig = [
   {
     name: '不良事件',
     path: '/accident',
-    icon: 'menu',
+    icon: 'lock',
     children: [
       { name: 'basic', path: '/list/basic', id: 'Menu_jd1s5' },
       { name: 'general', path: '/list/general', id: 'Menu_h5o7p' },
     ],
     id: 'Menu_w6ujt',
   },
-  {
-    name: 'account',
-    path: '/account',
-    icon: 'yonghu',
-    children: [{ name: 'setting', path: '/account/setting', id: 'Menu_qghux' }],
-    id: 'Menu_pt0h9',
-  },
+  
 ];
 
 export { headerMenuConfig, asideMenuConfig };
