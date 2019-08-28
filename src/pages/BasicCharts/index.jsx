@@ -1,11 +1,10 @@
 import React from 'react';
-import { withAuth } from '@/components/Auth';
 import OverviewPieChart from './components/OverviewPieChart';
 import BizchartsBarBasicColumn from './components/BizchartsBarBasicColumn';
 import BizchartsLineCurved from './components/BizchartsLineCurved';
 import BizchartsOtherBubbleImage from './components/BizchartsOtherBubbleImage';
 
-function BasicCharts() {
+export default function BasicCharts() {
   return (
     <div>
       <OverviewPieChart />
@@ -16,6 +15,3 @@ function BasicCharts() {
   );
 }
 
-export default withAuth({
-  authorities: ['admin', 'user',''],
-})(BasicCharts);

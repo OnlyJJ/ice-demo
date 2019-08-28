@@ -45,17 +45,17 @@ const routerConfig = [
     children: [
       { path: '/exception/500', component: ServerError },
       { path: '/account/setting', component: Setting },
-      { path: '/chart/basic01', component: BasicCharts },
-      { path: '/chart/general01', component: Charts },
-      { path: '/list/basic01', component: BasicList },
-      { path: '/list/general01', component: ProjectList },
+      { path: '/chart/basic', component: BasicCharts },
+      { path: '/chart/general', component: Charts },
+      { path: '/list/basic', component: BasicList },
+      { path: '/list/general', component: ProjectList },
       { path: '/result/fail', component: Fail },
       
-      { path: '/profile/basic01', component: Profile },
-      { path: '/profile/general01', component: Terms },
+      { path: '/profile/basic', component: Profile },
+      { path: '/profile/general', component: Terms },
 
-      { path: '/table/basic01', component: BasicTable },
-      { path: '/table/general01', component: GeneralTable },
+      { path: '/table/basic', component: BasicTable },
+      { path: '/table/general', component: GeneralTable },
 
       { path: '/dashboard/monitor', component: Dashboard },
       
@@ -63,7 +63,7 @@ const routerConfig = [
       { path: '/exception/204', component: Empty },
       { path: '/exception/404', component: NotFound },
       { path: '/user/login', component: MyUserLoing },
-      { path: '/yp/cost01', component: Yaoping },
+      { path: '/yp/cost', component: Yaoping },
       { path: '/home', component: Home },
       { path: '/decision/basic', component: Decision },
       { path: '/dashboard/cost', component: Finance },

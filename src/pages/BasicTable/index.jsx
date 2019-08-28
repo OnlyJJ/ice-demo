@@ -1,9 +1,9 @@
 import React from 'react';
-import { withAuth } from '@/components/Auth';
+// import { withAuth } from '@/components/Auth';
 import TableChartCard from './components/TableChartCard';
 import TabTable from './components/TabTable';
 
-function BasicTable() {
+export default function BasicTable() {
   return (
     <div>
       <TabTable />
@@ -12,6 +12,6 @@ function BasicTable() {
   );
 }
 // 权限控制
-export default withAuth({
-  authorities: ['admin', 'user', ''],
-})(BasicTable);
+// export default withAuth({
+//   authorities: ['admin', 'user', ''],
+// })(BasicTable);
