@@ -10,19 +10,6 @@
 
 ## 简介
 
-基于海量高质量可复用区块，通过 GUI 工具快速搭建的一套中后台模板。
-
-![ice-design-pro](https://img.alicdn.com/tfs/TB1_bulmpOWBuNjy0FiXXXFxVXa-1920-1080.png)
-
-## 技术点
-
-- icedesign
-- react
-- icestore
-- react-router-dom v4
-- axios
-- ice-scripts
-- etc...
 
 ## 使用
 
@@ -37,3 +24,9 @@ $ npm run build  // 构建 dist
 ## 相关文档
 
 - [ICE Design Pro 使用文档](https://github.com/alibaba/ice/wiki#ice-design-pro-%E4%BD%BF%E7%94%A8%E6%96%87%E6%A1%A3)
+
+## 素材
+- [图表](https://gallery.echartsjs.com/)
+- [矢量图标](https://www.iconfont.cn/)
+- [图标icon](http://www.fontawesome.com.cn/faicons/)
+
