@@ -71,28 +71,17 @@ export default function MyChart() {
         let objectGraph = {};
         //得到社保的判断
         var valueMax = (graphData.length - 1 - a) * 100; //valueMax的值影响输入的值
-        if(graphData[a].speed == "undefined" || graphData[a].speed == "") {
-            objectGraph = {
-                name: graphData[a].name,
-                category: 1,
-                value: 'xx',
-                symbolSize: [35,33],
-                symbol: 'image://' + graphData[a].imgUrl,
-                symbolOffset: ['-90%', '50%'],
-                symbolKeepAspect: true,
-            }
-        } else {
-            objectGraph = {
-                name: graphData[a].name,
-                category: 0,
-                active: true,
-                speed: '',
-                value: [0, valueMax],
-                symbolSize: [35,33],
-                symbol: 'image://' + graphData[a].imgUrl,
-                symbolOffset: ['-90%', '50%'],
-                symbolKeepAspect: true
-            }
+        
+        objectGraph = {
+            name: graphData[a].name,
+            category: 0,
+            active: true,
+            speed: '',
+            value: [0, valueMax],
+            symbolSize: [35,33],
+            symbol: 'image://' + graphData[a].imgUrl,
+            symbolOffset: ['-90%', '50%'],
+            symbolKeepAspect: true
         }
         items.push(objectGraph)
     }
@@ -203,6 +192,47 @@ export default function MyChart() {
             links: links,
             categories: categories
         }, {
+            type: 'graph',
+            layout: 'none',
+            coordinateSystem: 'cartesian2d',
+            symbolSize: 60,
+            z: 2,
+            edgeLabel: {
+                normal: {
+                    show: true,
+                    textStyle: {
+                        fontSize: 14,
+                        color:"#fff",//50kb的文字
+                    },
+                    formatter: function(params) {
+                        let txt = ''
+                        if(params.data.speed !== undefined) {
+                            txt = params.data.speed
+                        }
+                        return txt
+                    },
+                }
+            },
+            label: {
+                normal: {
+                    show: true,
+                    position: 'top',
+                    color: '#fff',
+                    distance:2
+                }
+            },
+            lineStyle: {
+                normal: {
+                    width: 2,
+                    curveness:0.5,
+                    shadowColor: '#fff'
+                },
+            },
+            edgeSymbol: ['circle', 'arrow'],
+            edgeSymbolSize: 8,
+            data: data,
+            links: links
+        },{
             name: 'A',
             type: 'lines',
             coordinateSystem: 'cartesian2d',
