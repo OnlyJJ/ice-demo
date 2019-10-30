@@ -18,7 +18,7 @@
     "@icedesign/layout": "^1.x",
     "@icedesign/scaffold-pro": "^0.1.45",
     "@icedesign/theme": "^1.x",
-    "axios": "^0.17.1",
+    "axios": "^0.18.1",
     "bizcharts": "^3.2.2",
     "classnames": "^2.2.5",
     "cookie": "^0.4.0",
